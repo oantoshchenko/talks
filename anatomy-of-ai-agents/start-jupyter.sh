@@ -8,8 +8,8 @@ echo "Setting up Anatomy of AI Agents..."
 
 # Create virtual environment if it doesn't exist
 if [ ! -d ".venv" ]; then
-    echo "Creating virtual environment..."
-    uv venv
+    echo "Creating virtual environment with Python 3.11..."
+    uv venv --python 3.11
 fi
 
 # Install dependencies
