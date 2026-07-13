@@ -58,6 +58,19 @@ def _(mo):
 
 @app.cell(hide_code=True)
 def _(mo):
+    mo.callout(
+        mo.md(
+            "**This notebook is fully interactive only when you run it locally.** It uses local "
+            "models via [Ollama](https://ollama.com), so in a static web preview the inputs below "
+            "are frozen. To type your own words and queries, clone the repo and run `./run.sh`."
+        ),
+        kind="warn",
+    )
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
     mo.md("""
     # RAG you already use
     - Right now I'm talking to **Claude Code** — and it answers from my **memory**, my notes (**Obsidian**), my tickets (**Linear**).
