@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# marimo cache / autosaves
+__marimo__/
+
+# Environment variables
+.env
+
+# Isolated reference material — external clones we take inspiration from,
+# never part of the talk and nothing here depends on them.
+reference/
+
+# Claude Code dev tooling (dashboard config, machine-local hooks) — not talk content
+.claude/
+scripts/marimo-check-hook.sh
+
+# OS
+.DS_Store
